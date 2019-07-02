@@ -1,0 +1,26 @@
+<link href="enterpage.css" rel="stylesheet">
+
+{{#partial "content"}}
+    <h1>Enter Normal Animal</h1>
+    <form method="post" action="/newnormalanimal">
+        <input placeholder="Animal Name" name="name" type="text" required="">
+
+        <p>{{name}}</p>
+            <select class="dropdown">
+                <div class="dropdown-menu">
+        {{#each animals}}
+                    <option class="dropdown-item" >{{name}}</option>
+        {{/each}}
+                </div>
+            </select>
+
+
+        {{#if exists}}
+            <p><strong>Animal already exists</strong></p>
+            {{/if}}
+        <button>Submit</button>
+    </form>
+
+    <a class="follow" href="https://www.instagram.com/prismmprism/" target="_blank"><i class="fa fa-twitter"></i>Follow Me</a>
+{{/partial}}
+{{> layout.hbs}}

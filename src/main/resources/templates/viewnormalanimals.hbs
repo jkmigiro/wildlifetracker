@@ -1,0 +1,34 @@
+<link rel="stylesheet" href="rangers.css">
+<link rel="stylesheet" href="cards.css">
+{{#partial "content"}}
+    <h2>Normal Animals Table</h2>
+    <div class="table-wrapper">
+        <table class="fl-table">
+            <thead>
+
+            <tr>
+
+                <th>Name</th>
+                <th>Id</th>
+                <th>Creation</th>
+                <th>Times Sighted</th>
+
+            </tr>
+            </thead>
+            <tbody>
+            {{#each animals}}
+            <tr>
+
+                <td>{{name}}</td>
+                <td>{{normalid}}</td>
+                <td>{{creation}}</td>
+                <td>{{sighted}}</td>
+
+
+            </tr>
+            {{/each}}
+            <tbody>
+        </table>
+    </div>
+{{/partial}}
+{{> layout.hbs}}

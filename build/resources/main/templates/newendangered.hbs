@@ -1,0 +1,29 @@
+<link href="enterpage.css" rel="stylesheet">
+
+{{#partial "content"}}
+    <h1>Enter Endangared Animal</h1>
+    <form method="post" action="/newendangered">
+        <h1>Material Design Text Input With No Extra Markup</h1>
+        <input placeholder="Animal Name" name="name" type="text" required="">
+        {{#each names}}
+            <div class="dropdown-menu">
+                <option class="dropdown-item" >{{names}}</option>
+                <p>Okay</p>
+            </div>
+        {{/each}}
+        {{#each animals}}
+            <div class="dropdown-menu">
+                <option class="dropdown-item" >{{name}}</option>
+
+                <p>Okay</p>
+            </div>
+        {{/each}}
+        {{#if exists}}
+            <p><strong>Animal already exists</strong></p>
+        {{/if}}
+        <button>Submit</button>
+    </form>
+
+    <a class="follow" href="https://twitter.com/mildrenben" target="_blank"><i class="fa fa-twitter"></i>Follow Me</a>
+{{/partial}}
+{{> layout.hbs}}

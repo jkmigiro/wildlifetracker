@@ -1,0 +1,56 @@
+<link href="enterpage.css" rel="stylesheet">
+<link href="bootstrap.css" rel="stylesheet">
+<script src="main.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+{{#partial "content"}}
+    <h1>Welcome. Please login or enter as a guest</h1>
+    <form method="post" action="/sightingsnormalanimal">
+        <h1>Normal Animal Sighting</h1>
+        <input placeholder="Location" id="location" type="text" >
+        <div class="form-group">
+            <select class="form-control dropdown-dark" name="location">
+
+                {{#each location}}
+                    <option class="dropdown-item" value={{locationid}} name=locationid>{{place}}</option>
+                {{/each}}
+            </select>
+        </div>
+
+        <input placeholder="Name of Normal Animal" id="animal" type="text" >
+        <div class="form-group">
+            <select class="form-control dropdown-dark" name="normal">
+
+                    {{#each animals}}
+                        <option class="dropdown-item" value={{normalid}} name="normalid" >{{name}}</option>
+                    {{/each}}
+
+            </select>
+        </div>
+
+        <input placeholder="Ranger ID" id="ranger" type="text" >
+        <div class="form-group">
+            <select class="form-control dropdown-dark" name="rangers">
+
+                    {{#each rangers}}
+                        <option class="dropdown-item" value={{rangerid}} name="rangerid">{{name}}</option>
+                    {{/each}}
+
+            </select>
+        </div>
+
+
+
+
+
+        <button>Submit</button>
+    </form>
+    <div class="jumbotron text-xs-center">
+        <p class="lead">
+            <a class="btn btn-primary btn-sm" href="/newnormalanimal" role="button">Add New Normal Animal</a>
+            <a class="btn btn-primary btn-sm" href="/newendangered" role="button">Add New Endangared</a>
+        </p>
+    </div>
+    <a class="follow" href="https://twitter.com/mildrenben" target="_blank"><i class="fa fa-twitter"></i>Follow Me</a>
+
+{{/partial}}
+{{> layout.hbs}}
