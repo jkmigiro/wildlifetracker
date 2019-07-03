@@ -252,6 +252,9 @@ public String getLocation_name(){
 public String getEndangeredanimal_id(){
         return this.endangeredanimal_name;
 }
+    public String getNormalanimalname(){
+        return this.normalanimal_name;
+    }
     }
 
 

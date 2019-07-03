@@ -44,11 +44,11 @@
       <IntrospectionStateNumber>894</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
-      <Relations>sequence|table|34837|34839|1
-sequence|table|34845|34847|1
+      <Relations>sequence|table|34845|34847|1
 sequence|table|34856|34858|1
 sequence|table|34864|34866|1
 sequence|table|34875|34877|1
+sequence|table|34837|34839|1
 </Relations>
     </database>
     <role id="9" parent="1" name="faraday_postgresql">

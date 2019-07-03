@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SightingsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-07-03T18:22:20" hostname="lika" time="0.244">
+  <properties/>
+  <testcase name="addSightingfor_normalanimal" classname="SightingsTest" time="0.244"/>
+  <system-out><![CDATA[ERROR: duplicate key value violates unique constraint "sightings_pk"
+  Detail: Key (id)=(1) already exists.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,2 +1,2 @@
-1Connected to the PostgreSQL server successfully.
-{}
+EERROR: duplicate key value violates unique constraint "sightings_pk"
+'  Detail: Key (id)=(1) already exists.
