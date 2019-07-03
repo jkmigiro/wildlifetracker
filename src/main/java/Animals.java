@@ -8,9 +8,9 @@ import java.util.HashMap;
 import java.util.List;
 
 public class Animals implements SqlDao {
-    private static final String url = "jdbc:postgresql://localhost:5432/wildlife_tracker";
-    private static  final String user = "likad";
-    private static  final String password = "prismas";
+    public static final String url = "jdbc:postgresql://ec2-23-21-160-38.compute-1.amazonaws.com/diblbe28bluam";
+    public static final String user = "zxbeaauddplwmn";
+    public static  final String password = "0508f0d46b5f3daa8e4fa1e3d77c25f555df40722eb2fca8a6a0f11b6d9ac4cf";
     public static HashMap<Integer,Animals> allAnimals=new HashMap<>();
     public static HashMap<Integer,Animals> all_Endangered_Animals=new HashMap<>();
     public static HashMap<Integer,HashMap<String,Object>> selectAllNewAnimals=new HashMap<>();

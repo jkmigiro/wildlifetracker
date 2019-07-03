@@ -7,8 +7,8 @@ import java.util.HashMap;
 
 public class Ranger implements SqlDao {
     private static final String url = "jdbc:postgresql://localhost:5432/wildlife_tracker";
-    private static  final String user = "likad";
-    private  static final String password = "prismas";
+    private static final String user = "likad";
+    private static  final String password = "prismas";
     private int id;
     private String name;
     private String passcode;
@@ -17,7 +17,6 @@ public class Ranger implements SqlDao {
     private int no_of_endangeredanimals;
     private Date creation;
     public static HashMap<Integer,Ranger> allRangers=new HashMap<>();
-
     private static String rangerinsert="INSERT INTO \"Ranger\"(name,password,number,no_of_animals,no_of_endangeredanimals,creationdate) VALUES(?,?,?,?,?,?)";
     private static String selectAllRangers="SELECT * FROM \"Ranger\"";
     private static String rangerExists="SELECT name FROM \"Ranger\"";
@@ -103,6 +102,10 @@ public void removezero(Long i){
             System.out.println(e.getMessage());
         }
     }
+
+
+
+
     public static void selectAll(){
 
         try {

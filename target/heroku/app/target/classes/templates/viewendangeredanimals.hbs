@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="rangers.css">
+<link rel="stylesheet" href="cards.css">
+{{#partial "content"}}
+    <h2>Endangered Animals Table</h2>
+    <div class="table-wrapper">
+        <table class="fl-table">
+            <thead>
+
+            <tr>
+                <th>Name</th>
+                <th>Id</th>
+                <th>Times Sighted</th>
+                <th>Creation</th>
+            </tr>
+            </thead>
+            <tbody>
+            {{#each animals}}
+                <tr>
+                    <td>{{name}}</td>
+                    <td>{{en_id}}</td>
+                    <td>{{sighted}}</td>
+                    <td>{{creation}}</td>
+                </tr>
+            {{/each}}
+            <tbody>
+        </table>
+    </div>
+
+
+{{/partial}}
+{{> layout.hbs}}

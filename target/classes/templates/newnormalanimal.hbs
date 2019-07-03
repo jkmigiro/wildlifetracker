@@ -1,0 +1,31 @@
+<link href="enterpage.css" rel="stylesheet">
+
+{{#partial "content"}}
+
+    <form method="post" action="/newnormalanimal">
+        <h1>Enter Normal Animal</h1>
+        <input placeholder="Animal Name" name="name" type="text" required="">
+
+        <p>{{name}}</p>
+
+        <div class="form-group">
+            <select class="form-control dropdown-dark" name="normal">
+                <option selected disabled>These are the animals already available</option>
+                {{#each animals}}
+
+                    <option class="dropdown-item"  name="normalid" >{{name}}</option>
+                {{/each}}
+
+            </select>
+            </div>
+
+
+        {{#if exists}}
+            <p><strong>Animal already exists</strong></p>
+            {{/if}}
+        <button>Submit</button>
+    </form>
+
+
+{{/partial}}
+{{> layout.hbs}}

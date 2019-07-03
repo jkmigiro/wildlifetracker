@@ -1,0 +1,19 @@
+<link href="enterpage.css" rel="stylesheet">
+<script src="jquery-3.4.1.js"></script>
+<script src="main.js"></script>
+{{#partial "content"}}
+
+<form method="post" id="login" action="/login">
+    <h1>Login</h1>
+    <input placeholder="Username" id="username" name="username" type="text" required="">
+    <input placeholder="Password" id="password" name="password" type="password" required="">
+    {{#if wrong}}
+    <p><strong>Username or password wrong!Try again.</strong></p>
+        {{/if}}
+    <button>Submit</button>
+    <a href="/signup"><p>Sign Up</p></a>
+</form>
+
+
+{{/partial}}
+{{> layout.hbs}}

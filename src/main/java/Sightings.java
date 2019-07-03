@@ -7,7 +7,7 @@ import java.util.HashMap;
 public class Sightings implements WildlifeaDao {
     private static final String url = "jdbc:postgresql://localhost:5432/wildlife_tracker";
     private static final String user = "likad";
-    private static final String password = "prismas";
+    private static  final String password = "prismas";
     private int id;
     private String location_name;
     private Date creation;

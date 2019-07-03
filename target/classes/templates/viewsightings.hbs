@@ -1,0 +1,60 @@
+<link rel="stylesheet" href="rangers.css">
+<link rel="stylesheet" href="cards.css">
+{{#partial "content"}}
+    <h2>Sightings Table</h2>
+    <div class="table-wrapper">
+        <table class="fl-table">
+            <thead>
+
+            <tr>
+
+                <th>Sighting ID</th>
+                <th>Location Name</th>
+                <th>Location ID</th>
+                <th>Ranger ID</th>
+                <th>Animal Name</th>
+                <th>Animal ID</th>
+                <th>Endangered Animal Name</th>
+                <th>Endangered Animal ID</th>
+                <th>Creation Date</th>
+
+
+            </tr>
+            </thead>
+            <tbody>
+            {{#each sightings}}
+                <tr>
+                    <td>{{id}}</td>
+                    <td>{{locationname}}</td>
+                    <td>{{locationid}}</td>
+                    <td>{{rangerid}}</td>
+                    {{#if animalname}}
+                        <td>{{animalname}}</td>
+                        {{else}}
+                        <td>N/A</td>
+                        {{/if}}
+                    {{#if animalid}}
+                        <td>{{animalid}}</td>
+                    {{else}}
+                        <td>N/A</td>
+                    {{/if}}
+                    {{#if enname}}
+                        <td>{{enname}}</td>
+                    {{else}}
+                        <td>N/A</td>
+                    {{/if}}
+                    {{#if enid}}
+                        <td>{{enid}}</td>
+                    {{else}}
+                        <td>N/A</td>
+                    {{/if}}
+                    <td>{{creation}}</td>
+                </tr>
+            {{/each}}
+            <tbody>
+        </table>
+    </div>
+
+
+{{/partial}}
+{{> layout.hbs}}

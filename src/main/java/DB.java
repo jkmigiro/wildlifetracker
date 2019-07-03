@@ -25,4 +25,5 @@ public class DB {
             logger.error("Unable to connect to database.");
         }
     }
+
 }

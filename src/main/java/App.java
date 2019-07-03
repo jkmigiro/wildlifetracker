@@ -1,10 +1,10 @@
 import java.sql.*;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-
+import static spark.Spark.*;
 import static spark.Spark.staticFileLocation;
 
-import org.antlr.v4.runtime.atn.SemanticContext;
+
 import spark.ModelAndView;
 import spark.template.handlebars.HandlebarsTemplateEngine;
 
@@ -14,11 +14,11 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-import static spark.Spark.*;
+
 public class App {
-    public static final String url = "jdbc:postgresql://ec2-23-21-160-38.compute-1.amazonaws.com/diblbe28bluam";
-    public static final String user = "zxbeaauddplwmn";
-    public static  final String password = "0508f0d46b5f3daa8e4fa1e3d77c25f555df40722eb2fca8a6a0f11b6d9ac4cf";
+    public static final String url = "jdbc:postgresql://localhost:5432/wildlife_tracker";
+    public static final String user = "likad";
+    public static  final String password = "prismas";
     public static int theId;
     static int getHerokuAssignedPort() {
         ProcessBuilder processBuilder = new ProcessBuilder();
