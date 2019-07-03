@@ -2,19 +2,29 @@ h1, input::-webkit-input-placeholder, button {
     font-family: 'roboto', sans-serif;
     transition: all 0.3s ease-in-out;
 }
+body{
+    background-image: url("bg-masthead.jpg");
+    background-size: cover;
+}
 h1 {
     height: 100px;
     width: 100%;
-    font-size: 5px;
-    background: #18aa8d;
+    font-size: 1px;
+    background: ghostwhite;
     color: white;
     line-height: 150%;
     border-radius: 3px 3px 0 0;
     box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2);
 }
+.foot{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+
+}
 form {
     box-sizing: border-box;
-    width: 260px;
+    width: 300px;
     margin: 100px auto 0;
     box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
     padding-bottom: 40px;

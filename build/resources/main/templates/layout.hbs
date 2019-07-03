@@ -32,6 +32,8 @@
             <a href="/viewsightings"><li>All Animal Sightings</li></a>
             <a href="/viewnormalanimals"><li>View Normal Animals</li></a>
             <a href="/viewendangered"><li>View Engangered Animals</li></a>
+            <a href="/sightingsnormal"><li>New Animal Sighting</li></a>
+            <a href="/sightingsendangered"><li>New Endangered Sighting</li></a>
             <li>Contact</li>
         </ul>
 
@@ -46,12 +48,21 @@
 
     </div>
 </div>
-<div class="heroes">
+    <br>
+
+    <div class="row">
     {{#block "footer"}}
-<a href="/sightingsnormal"><button class="btn-dark">Add a Normal Animal Sighting</button></a>
-        <a href="/sightingsendangered"><button class="btn-dark">Add an Endangered Animal Sighting</button></a>
+        <div class="col">
+            <div class="mx-auto w-50 p-3 bg-dark text-white text-center">
+                <a href="/sightingsnormal"><button class="btn-danger btn-lg">Normal Animal Sighting</button></a>
+                <a href="/sightingsendangered"><button class="btn-danger btn-lg">Endangered Animal Sighting</button></a><br><br>
+                <a href="/newnormalanimal"><button class="btn-success btn-lg">Add Normal Animal</button></a>
+                <a href="/newendangered"><button class="btn-success btn-lg">Add Endangered Animal</button></a>
+            </div>
+        </div>
     {{/block}}
-</div>
+    </div>
+
 </body>
 </html>
 

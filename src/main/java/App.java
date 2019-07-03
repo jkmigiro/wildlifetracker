@@ -27,6 +27,10 @@ public class App {
         }, new HandlebarsTemplateEngine());
         get("/", (req, res) -> {
             Map<String, Object> model = new HashMap<>();
+            return new ModelAndView(model, "welcoming.hbs");
+        }, new HandlebarsTemplateEngine());
+        get("/login", (req, res) -> {
+            Map<String, Object> model = new HashMap<>();
             return new ModelAndView(model, "login.hbs");
         }, new HandlebarsTemplateEngine());
 
@@ -119,6 +123,8 @@ public class App {
         //This is a new endangered animal animal
         get("/newendangered", (req, res) -> {
             Map<String, Object> model = new HashMap<>();
+            Animals.selectAllEndangeredAnimal();
+            model.put("animals",Animals.selectAllNewEndangaredAnimals);
             return new ModelAndView(model, "newendangered.hbs");
         }, new HandlebarsTemplateEngine());
         //Add a new normal animal

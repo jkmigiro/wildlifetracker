@@ -2,7 +2,7 @@
 <script src="jquery-3.4.1.js"></script>
 
 {{#partial "content"}}
-    <h1>Enter you details</h1>
+
     <form method="post" id="enterranger" action="/verification">
         <h1>Welcome Ranger,enter your details</h1>
         <input placeholder="Username" id="rangerusername" name="rangerusername" name="id" type="text" required="">
@@ -10,7 +10,7 @@
         <p><strong>Username already exists</strong></p>
         {{/if}}
         <input placeholder="Password" id="rangerpassword" name="rangerpassword" name="password" type="password" required="">
-        <input placeholder="Phonenumber" id="rangerphonenumber" type="text"  name="rangerphonenumber">
+        <input placeholder="Phonenumber.Use country code only" id="rangerphonenumber" type="text" required  name="rangerphonenumber">
         <button>Submit</button>
     </form>
 

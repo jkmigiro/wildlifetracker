@@ -2,7 +2,7 @@
 <script src="jquery-3.4.1.js"></script>
 <script src="main.js"></script>
 {{#partial "content"}}
-<h1>Welcome. Please login or enter as a guest</h1>
+
 <form method="post" id="login" action="/login">
     <h1>Login</h1>
     <input placeholder="Username" id="username" name="username" type="text" required="">
@@ -14,7 +14,6 @@
     <a href="/signup"><p>Sign Up</p></a>
 </form>
 
-<a class="follow" href="https://twitter.com/mildrenben" target="_blank"><i class="fa fa-twitter"></i>Follow Me</a>
 
 {{/partial}}
 {{> layout.hbs}}

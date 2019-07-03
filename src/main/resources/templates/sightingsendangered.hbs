@@ -3,8 +3,8 @@
 
 {{#partial "content"}}
     <form method="post" action="/sightingsendangered">
-        <h1>Normal Animal Sighting</h1>
-        <input placeholder="Location" id="location" type="text" >
+        <h1>Endangered Animal Sighting</h1>
+
         <div class="form-group">
             <select class="form-control" name="location">
                 <option selected disabled>Choose a location</option>
@@ -36,7 +36,7 @@
         </div>
         <div class="form-group">
             <select class="form-control" name="health">
-                <option selected>Choose your Health Status</option>
+                <option selected>Choose the Health Status</option>
                 <option class="dropdown-item" value >Fine</option>
                 <option class="dropdown-item" value >Unwell</option>
                 <option class="dropdown-item" value >Not Sure</option>
@@ -44,7 +44,7 @@
         </div>
         <div class="form-group">
             <select class="form-control" name="rangers">
-                <option selected disabled>Choose your Ranger Name</option>
+                <option selected disabled>Choose the Ranger Name</option>
                 {{#each rangers}}
                     <option class="dropdown-item" value={{rangerid}} name="rangerid">{{name}}</option>
                 {{/each}}
@@ -57,13 +57,7 @@
 
         <button>Submit</button>
     </form>
-    <div class="jumbotron text-xs-center">
-        <p class="lead">
-            <a class="btn btn-primary btn-sm" href="/newnormalanimal" role="button">Add New Normal Animal</a>
-            <a class="btn btn-primary btn-sm" href="/newendangered" role="button">Add New Endangared</a>
-        </p>
-    </div>
-    <a class="follow" href="https://twitter.com/mildrenben" target="_blank"><i class="fa fa-twitter"></i>Follow Me</a>
+
 
 
 {{/partial}}
